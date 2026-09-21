@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>크랑이를 만져보자</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+
+
+    <style>
+
+    	body {font-family: "orbit"}
+
+        body {
+            margin: 0;
+            background-color: lightyellow;
+        }
+
+        .header {
+            height: 140px;
+            background-color: #6E3D00;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #FFF4D8;
+            font-size: 60px;
+        }
+
+        .pudding {
+        	display: flex;
+        	justify-content: center;
+        	margin-top: 60px;
+        }
+
+        #pudding_a {
+        	display: none;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+	<div class="header">
+        ~ 크랑이 ASMR ~
+    </div>
+
+	<audio src="pudding_asmr.wav" id="pd_asmr"></audio>
+
+	<div class="pudding">
+		<img src="pd_before.png" id="pudding_b">
+		<img src="pd_after.gif" id="pudding_a">
+	</div>
+
+    <script>
+
+    	pudding_b.onclick = function() {
+    		pudding_b.style.display = "none";
+    		pudding_a.style.display = "block";
+    		pd_asmr.play();
+    	}
+    </script>
+
+    <script> 
+    	alert("크랑이의 세계로 . . . "); 
+	</script>
+
+</body>
+
+</html>
